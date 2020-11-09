@@ -4,55 +4,47 @@
         background-color: #fff;
         font-family: 'Bellota', cursive;
         /* overflow: hidden; */
-        -webkit-font-smotthing: antialiased;
+
     }
 
-    nav {
+    .navbar {
         width: 100%;
+        position: top;
+        height: 120px;
         background-color: #1e1e1e;
-        overflow: hidden;
-
+        border-bottom: 2px solid #CFA417;
+        font-family: 'Bellota', cursive;
+        text-align: center;
     }
 
-    .nav-ul {
-        padding-top: 33px;
-        border-bottom: 4px solid goldenrod;
-    }
-
-    ul {
-        padding: 0;
-        margin: 0 0 0 150px;
-        list-style: none;
-    }
-
-    li {
+    .navbar .logo {
+        width: 200px;
+        height: 100%;
+        margin-left: 25px;
         float: left;
+        vertical-align: middle;
     }
 
-    .logo img {
-        position: absolute;
-        margin-top: 0px;
-        margin-left: 10px;
-        width: 130px;
-        height: 130px;
+    .navbar ul {
+        list-style-type: none;
+        float: left;
+        padding-top: 35px;
     }
 
-    nav a {
-        display: inline-block;
-        color: #fff;
+    .navbar ul li {
+        display: inline;
         font-size: 18px;
-        padding: 50px 30px;
-        -webkit-transition: all 0.3s;
-        transition: all 0.3s;
+        width: 150px;
+        padding: 50px 15px;
+        transition: .3s;
+    }
+
+    .navbar ul li a {
         text-decoration: none;
+        color: white;
     }
 
-    nav a:hover {
-        color: goldenrod;
-        transition: 0.5s;
-    }
-
-    nav .btn {
+    .navbar .btn {
         font-size: 17px;
         margin-top: 37px;
         background-color: transparent;
@@ -67,7 +59,11 @@
 
     }
 
-    nav .btn:hover {
+    .navbar ul li a:hover {
+        color: goldenrod;
+    }
+
+    .navbar .btn:hover {
         background-color: goldenrod;
         border-color: honeydew;
 
@@ -225,51 +221,56 @@
             visibility: visible;
         }
     } */
-
-
-    .choose {
-        width: 100%;
-        height: 100vh;
-        background-image: url(/images/intro-bg.jpg);
+    .whyus {
+        height: 110vh;
+        background-image: url('../images/intro-bg.jpg');
+        background-position: top;
         background-size: cover;
         background-repeat: no-repeat;
-        overflow: hidden;
-        padding: 0;
-        margin: 0;
-        margin-top: -5px;
     }
 
-    .choose h1 {
-        font-weight: 300;
-        font-size: 90px;
-        padding: 4% 0 0 6%;
-        font-stretch: normal;
+    .whyus .heading {
+        width: 800px;
+        padding: 10% 10% 0%;
     }
 
-    .choose p {
-        font-weight: 300;
+    h1 {
+        font-size: 70px;
+        font-weight: normal;
+    }
+
+    span {
         font-size: 20px;
-        padding: 0 35% 0 6%;
-        font-stretch: normal;
         color: #7e7e7e;
-        line-height: 1.8;
+        line-height: 1.5;
     }
 
     .icons {
-        padding-left: 9.3rem;
+        padding: 0% 10% 0%;
+        padding-top: 15px;
+        color: black;
     }
 
-    .choose h4 {
-        font-size: 30px;
-        padding: 0 2% 0 9%;
+    .whyus .icon {
+        width: 260px;
+        height: 150px;
+        float: left;
     }
-.choose{
-                height: 110vh;
-                background-image: url(/images/intro-bg.jpg);
-                background-size: cover;
-                background-position: 37% bottom;
 
-}
+    .icon h2 {
+        /* font-weight: bold; */
+        font-size: 48px;
+        color: black;
+        margin-top: -5px;
+        padding-right: 60%;
+    }
+
+    p {
+        font-size: 15px;
+        margin: 0;
+        margin-top: -40px;
+    }
+
     .services {
         overflow: auto;
         width: 100%;
@@ -316,147 +317,199 @@
 
     }
 
-    .client-test {
-        background-repeat: no-repeat;
+    .testimonial {
+        height: 100vh;
         width: 100%;
-        height: 605px;
-        background-image: url(/images/review-bg.jpg);
+        background-image: url('/images/review-bg.jpg');
         background-size: cover;
-        overflow: hidden;
+        background-repeat: no-repeat;
+        background-position: top;
     }
 
-    .client-test h1 {
-        font-weight: 300;
-        font-size: 80px;
-        padding-top: 18px;
-        padding-left: 6%;
+    .testimonial .head {
+        width: 800px;
+        padding: 5% 10% 0%;
     }
 
-    .client-test p {
-        font-weight: 300;
-        font-style: italic;
+    h1 {
+        font-size: 70px;
+        font-weight: normal;
+    }
+
+    .testimonial p {
         font-size: 20px;
-        padding: 0 25% 0 6%;
-        font-stretch: normal;
-        line-height: 2;
-        color: #8E8E8E;
+        font-style: italic;
+        margin-bottom: 50px;
+        line-height: 1.5;
     }
 
-    .client-test .img2 img {
+    .testimonial .img2 img {
         width: 65px;
         border-radius: 50px 50px;
         float: left;
-        margin-left: 6%;
+        /* margin-top: 15px; */
+        margin-left: 0%;
+
     }
 
-    .client-test .img2 h5 {
+    .testimonial .img2 h5 {
         font-size: 28px;
         font-weight: 50;
         font-stretch: normal;
         padding-left: 13%;
+        margin-top: 15%;
         margin-block-end: 0;
     }
 
-    .client-test .img2 h6 {
+    .testimonial .img2 h6 {
         font-size: 18px;
         font-weight: 50;
         margin-block-start: 0;
         margin-left: 13%;
+        /* margin-top: 15px; */
         color: goldenrod;
     }
 
-    .contact {
+    .footer {
         width: 100%;
-        height: 700px;
-        background-image: url(/images/footer-bg.jpg);
+        position: absolute;
+        height: 100vh;
+    }
+
+    .image5 {
+        height: 100%;
+        background-image: url('../images/footer-bg.jpg');
+        background-position: bottom;
+        background-repeat: no-repeat;
         background-size: cover;
     }
 
-    .contact-logo {
+    .footer .leftbox {
+        width: 19%;
+        /* height: 100%; */
+        padding: 10% 5% 5% 3%;
         float: left;
-        font-stretch: normal;
-        line-height: 2;
-        height: 400px;
-        color: dimgray;
-        padding-top: 8%;
-        padding-left: 2%;
     }
 
-    .contact-logo p {
-        margin-top: -10px;
-        padding-top: 0px;
-        padding-right: 70%;
-        padding-left: 0px;
-        font-size: 18px;
-        font-weight: 550;
-        line-height: 30px;
+    .leftbox p {
+        font-size: 20px;
+        font-style: italic;
+        margin-bottom: 50px;
+        line-height: 1.5;
+        color: gray;
     }
 
-    .contact .social-media i {
-        color: goldenrod;
-        margin-right: 15px;
-        padding-top: 6%;
-
+    .icon5 {
+        padding-top: 50px;
     }
 
-    .contact-logo2 .contact-image {
-        margin-top: 9%;
-        margin-left: -35%;
-        width: 40px;
-        color: goldenrod;
-        margin-block-end: 0;
+    .icon5 a {
+        color: #CFA417;
+        font-size: 1em;
+        padding: 0px 10px;
     }
 
-    .contact-logo3 {
-        float: right;
-        line-height: 2;
-        color: dimgray;
+    .footer .centerbox {
+        width: 25%;
         padding-top: 10%;
-    }
-
-    .contact-logo3 h2 {
-        color: white;
-        letter-spacing: 2px;
-        font-weight: 20;
-        font-size: 28px;
-        margin-left: -30%;
-        margin-top: -5px;
-    }
-
-    .textarea {
         float: left;
-        width: 40%;
-        height: 30px;
-        margin-right: 15px;
-        border: none;
-        border-bottom: 2px solid gray;
-        background: none;
-        margin-top: 2%;
-        padding: 5px;
+        padding-left: 15px;
+        /* padding: 0% 0% 0% 0%; */
     }
 
-    .btn1 {
-        width: 130px;
-        height: 40px;
-        margin-top: 5%;
-        background-color: goldenrod;
-        border: none;
+    .footer h4 {
+        font-size: 26px;
         color: white;
+        margin-bottom: 20px;
+        margin-top: 0;
+    }
+
+    .footer ul {
+        float: left;
+        width: 175px;
+        padding-left: 0px;
+    }
+
+    .footer ul li {
+        list-style-type: none;
+        margin-bottom: 12px;
+    }
+
+    .footer ul li a {
+        color: #838383;
+        margin-bottom: 15px;
+        text-decoration: none;
+        text-transform: capitalize;
+    }
+
+    .footer .rightbox {
+        width: 35%;
+        padding-top: 10%;
+        float: left;
+        padding: 10% 0% 5% 5%;
+    }
+
+    .text6 {
+        color: #838383;
+        height: 39px;
+        border: none;
+        margin: 10px 10px 10px 10px;
+        width: 210px;
+        display: inline;
+        background: transparent;
+        border-bottom: 1px solid;
+        font-family: 'Bellota', cursive;
+        text-transform: capitalize;
         font-size: 15px;
     }
 
+    .btn5 {
+        width: 150px;
+        height: 50px;
+        border: none;
+        text-align: center;
+        background-color: #CFA417;
+        color: white;
+        margin-left: 10px;
+    }
+
+    nav {
+        position: absolute;
+        bottom: 2px;
+        right: 130px;
+    }
+
+    .footer nav ul {
+        list-style-type: none;
+        float: left;
+        width: 100%;
+    }
+
+    .footer nav ul li {
+        display: inline-block;
+        font-size: 18px;
+    }
+
+    .footer nav ul li a {
+        text-decoration: none;
+        color: #838383;
+        padding: 0px 20px;
+    }
+
     /*--------------------------------- About us -------------------------------------- */
-   
-    .about1{
-         
-         /* background-image: url('/images/about-.jpg');
+
+    .about1 {
+
+        /* background-image: url('/images/about-.jpg');
         background-size: cover;
         position: relative; */
         overflow: hidden;
-        }
-        .about1 img{
-             width: 100%;
-        }
+    }
+
+    .about1 img {
+        width: 100%;
+    }
+
     .text h2 {
         text-align: center;
         margin-top: -8%;
@@ -466,7 +519,8 @@
         /* position: absolute; */
         /* display: inline-block; */
     }
-    .text h2::after{
+
+    .text h2::after {
         position: absolute;
         content: '';
         border-top: 5px solid goldenrod;
@@ -475,74 +529,188 @@
         left: 48%;
         top: 22%;
     }
-    
-    .box{
-              width: 100%;
+
+    .box {
+        width: 100%;
     }
-    .subbox1 img{
+
+    .subbox1 img {
         padding-top: 10%;
         padding-left: 8%;
         float: left;
     }
-  .text1{
+
+    .text1 {
         padding-top: 15%;
         color: black;
     }
-    .subbox1 p{
+
+    .subbox1 p {
         /* line-height: 5px;*/
-    padding-left: 50%;
-    font-size: 20px;
-    color: #7e7e7e;
-    line-height: 35px;
-    font-weight: 20;
-}
-.text2{
-    padding-top: 15%;
-    color: black;
-    margin-left: -78%;
-}
-.subbox2 p{
-    padding-right: 50%;
-    font-size: 20px;
-    color: #7e7e7e;
-    font-weight: 20;
-    margin-left: 8%;
-}
-.subbox2 img{
-    /* padding-left: 8%; */
-    float: right;
-    /* margin: 5% 6% 0 0; */
-    margin-top: -18%;
-    margin-right: 50px;
-}
+        padding-left: 50%;
+        font-size: 20px;
+        color: #7e7e7e;
+        line-height: 35px;
+        font-weight: 20;
+    }
 
-.subbox3{
-    width: 100%;
-    height: 110vh;
-}
-.subbox3 .leftbox img{
-    float: left;
-    padding-top: 15%;
-}
+    .text2 {
+        padding-top: 15%;
+        color: black;
+        margin-left: -78%;
+    }
 
-.subbox4 {
-    float: right;
-    width: 40%;
-    margin-right: 15%;
-    margin-top: -25%;
-    height: 500px;
-    background-color: #F6F6F6;
-}
-.right-box 
-{
-    margin-left: 20px;
-}
-.right-box .btn1{
-        outline: none;
-}
-.subbox4 h1{
-     font-size: 50px;
-     font-weight: 500;
-}
-/*------------------------------------ contact--------------------------------------*/
+    .subbox2 p {
+        padding-right: 50%;
+        font-size: 20px;
+        color: #7e7e7e;
+        font-weight: 20;
+        margin-left: 8%;
+    }
 
+    .subbox2 img {
+        /* padding-left: 8%; */
+        float: right;
+        /* margin: 5% 6% 0 0; */
+        margin-top: -18%;
+        margin-right: 50px;
+    }
+
+    .subbox3 {
+        width: 100%;
+        height: 140vh;
+    }
+
+    .subbox3 .leftbox img {
+        float: left;
+        padding-top: 15%;
+    }
+
+    .subbox4 {
+        float: right;
+        width: 40%;
+        margin-right: 15%;
+        margin-top: -43%;
+        height: 500px;
+        background-color: #F6F6F6;
+    }
+
+    .right-box {
+        margin-left: 20px;
+        /* margin-top: -155px; */
+    }
+
+    .right-box img {
+        padding-top: 10px;
+    }
+
+    .right-box p {
+        padding-top: 10%;
+    }
+
+    .subbox4 h1 {
+        font-size: 50px;
+        font-weight: 500;
+    }
+
+    /*------------------------------------ contact--------------------------------------*/
+
+    .contact-me {
+        width: 100%;
+        height: 110vh;
+    }
+
+    .contact-me .left {
+        width: 40%;
+        height: 100%;
+        float: left;
+        padding: 8% 5%;
+    }
+
+    .contact-me i {
+        font-size: 36px;
+        color: black;
+        /* margin-top: -35%; */
+    }
+
+    .contact-me .left p {
+        font-size: 20px;
+        padding-top: 8%;
+        color: #7e7e7e;
+        line-height: 1.8;
+        text-align: justify;
+    }
+
+    .icon1 {
+        width: 20%;
+        height: 100px;
+        float: left;
+        padding-top: 2%;
+    }
+
+    .icon1 i {
+        color: goldenrod;
+        padding-top: 15%;
+    }
+
+    .contact-me .icon2 {
+        width: 80%;
+        height: 100px;
+        float: left;
+        padding-top: 5%;
+    }
+
+    .icon1 {
+        width: 20%;
+        height: 100px;
+        float: left;
+    }
+
+    .contact-me .icon2 {
+        width: 80%;
+        height: 100px;
+        float: left;
+    }
+
+    .contact-me .right {
+        width: 44%;
+        height: 100%;
+        float: left;
+        padding: 8% 5%;
+        padding-left: 0px;
+    }
+
+    .contact-me .inputcol {
+        max-width: 44%;
+        margin-left: 12px;
+        float: left;
+
+    }
+
+    .contact-me input {
+        padding-bottom: 17px;
+        width: 100%;
+        border: none;
+        background: none;
+        border-bottom: 2px solid #e3e3e3;
+        font-size: 16px;
+        margin-bottom: 35px;
+        margin-top: 20px;
+        text-transform: capitalize;
+        /* margin-left: 15px; */
+    }
+
+    .contact-me .inputlast {
+        height: 100px;
+    }
+
+    .contact-me .btn {
+        width: 150px;
+        height: 50px;
+        border: none;
+        text-align: center;
+        background-color: #CFA417;
+        color: white;
+        margin-left: 10px;
+        margin-top: 0px;
+    }
